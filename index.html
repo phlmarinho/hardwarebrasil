@@ -3,14 +3,32 @@
 <head>
   <title>Hardware Brasil</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Hardware Brasil">
-  <meta name="keywords" content="hardware, componentes, periféricos, computador, desktop, notebook, tecnologia">
+  <meta name="description" content="Um espaço para falar sobre hardware, periféricos, dúvidas e problemas técnicos. Usuários de PC e Mac são bem-vindos!">
+  <meta name="keywords" content="hardware, componentes, periféricos, computador, desktop, notebook, redes, tecnologia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a:link, a:visited {
+  background-color: #2eb455;
+  color: #ffffff;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px -4px #111111;
+}
+a:hover, a:active {
+  background-color: #2dbd8e;
+  color: #ffffff;
 }
 body {
   display: flex;
@@ -27,7 +45,7 @@ body {
   flex: none;
   height: 55px;
 }
-#faixasuperior {
+#barrasuperior {
   flex: none;
   height: 5px;
   background-color: #2eb455;
@@ -37,40 +55,25 @@ body {
   overflow-y: auto;
   margin: 0px;
   background-color: #222222;
-  text-align: ;
 }
 #conteudo {
   flex: auto;
   color: #ffffff;
   background-color: #222222;
-  padding: 80px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
 }
-#faixainferior {
+#barrainferior {
   flex: none;
   height: 5px;
-  margin: 0px;
   background-color: #2eb455;
-  text-align: center;
 }
 #rodape {
   flex: none;
   height: 55px;
-}
-a:link, a:visited {
-  background-color: #2eb455;
-  color: #ffffff;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  box-shadow: 8px 8px 8px -4px #111111;
-}
-a:hover, a:active {
-  background-color: #2dbd8e;
-  color: #ffffff;
-}
 </style>
 </head>
 <body>
@@ -78,7 +81,7 @@ a:hover, a:active {
 <div id="topo">
 </div>
 
-<div id="faixasuperior">
+<div id="barrasuperior">
 </div>
 
 <div id="principal">
@@ -95,7 +98,7 @@ a:hover, a:active {
 
 </div>
 
-<div id="faixainferior">
+<div id="barrainferior">
 </div>
 
 <div id="rodape">
