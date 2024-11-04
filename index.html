@@ -12,9 +12,22 @@ html, body {
   margin: 0;
   padding: 0;
 }
-img {
-  max-width: 100%;
-  height: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  background-image: url("imagens/hardware_brasil_fundo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: ;
+}
+table, th, td {
+  border: 0px;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
 }
 a:link, a:visited {
   background-color: #2eb455;
@@ -33,22 +46,15 @@ a:hover, a:active {
   color: #ffffff;
   border-color: #ffffff;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #000000;
-  background-image: url("imagens/hardware_brasil_fundo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: Arial, Verdana, sans-serif;
-  font-size: ;
+img {
+  max-width: 100%;
+  height: auto;
 }
 #topo {
   flex: none;
   height: 55px;
 }
-#barrasuperior {
+#bordasuperior {
   flex: none;
   height: 5px;
   background-color: #6fdb8f;
@@ -57,17 +63,19 @@ body {
 #principal {
   flex: auto;
   overflow-y: auto;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   background-color: #222222;
 }
 #conteudo {
   flex: auto;
   color: #ffffff;
   background-color: #222222;
-  padding: 60px 60px;
+  margin: 0;
+  padding: 20px 20px;
   text-align: center;
 }
-#barrainferior {
+#bordainferior {
   flex: none;
   height: 5px;
   background-color: #6fdb8f;
@@ -81,33 +89,28 @@ body {
 </head>
 
 <body>
-
 <div id="topo">
 </div>
-
-<div id="barrasuperior">
+<div id="bordasuperior">
 </div>
-
 <div id="principal">
-
-<div id="conteudo"><img src="imagens/hardware_brasil_logo.png" width="532" height="112"/><hr>
-<p>Um espaço para falar sobre hardware, periféricos, dúvidas e problemas técnicos. Usuários de PC e Mac são bem-vindos!</p>
-<br><br><br>
-<a href="https://www.reddit.com/r/hardwarebrasil/" target="_blank">Acesse a comunidade no Reddit</a>
-<br><br><br>
-<a href="#">Acesse o servidor no Discord [em breve]</a>
-<br><br><br>
-<a href="#">Vai montar um PC? Confira as builds recomendadas [em breve]</a>
+  <div id="conteudo">
+    <table>
+      <tr><td><img src="imagens/hardware_brasil_logo.png" width="532" height="112"/><br>
+      <hr><br>
+      Um espaço para falar sobre hardware, periféricos, dúvidas e problemas técnicos. Usuários de PC e Mac são bem-vindos!</td></tr>
+    </table>
+    <table>
+      <tr><td><a href="https://www.reddit.com/r/hardwarebrasil/" target="_blank">Acesse a comunidade no Reddit</a></td></tr>
+      <tr><td><a href="#">Acesse o servidor no Discord [em breve]</a></td></tr>
+      <tr><td><a href="#">Vai montar um PC? Confira as builds recomendadas [em breve]</a></td></tr>
+    </table>
+  </div>
 </div>
-
+<div id="bordainferior">
 </div>
-
-<div id="barrainferior">
-</div>
-
 <div id="rodape">
 </div>
-
 </body>
 
 </html>
