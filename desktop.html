@@ -23,23 +23,10 @@ body {
   font-family: Arial, Verdana, sans-serif;
   font-size: ;
 }
-table {
-  border: 0px;
-  width: 100%;
-  padding: 20px 20px;
-  text-align: center;
-}
-table.menu {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-th, td {
-  padding: 0px 5px;
-}
 a:link, a:visited {
   background-color: #2eb455;
   color: #ffffff;
+  margin: 5px 3px;
   padding: 12px 24px;
   text-align: center;
   text-decoration: none;
@@ -53,6 +40,20 @@ a:hover, a:active {
   background-color: #2dbd8e;
   color: #ffffff;
   border-color: #ffffff;
+}
+div {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
 }
 img {
   max-width: 100%;
@@ -104,111 +105,94 @@ img {
 </div>
 <div id="principal">
   <div id="conteudo">
-    <table>
-      <tr>
-        <td><img id="topo" src="imagens/hardware_brasil_logo.png" width="492" height="112"><br>
-          <hr><br>
-          <h3>Builds recomendadas [novembro/2024]</h3></td>
-        </tr>
-    </table>
-    <table class="menu">
-      <tr><td><a href="#desktop_2_mil">Desktop de R$ 2 mil</a></td>
-          <td><a href="#desktop_4_mil">Desktop de R$ 4 mil</a></td>
-		  <td><a href="#desktop_6_mil">Desktop de R$ 6 mil</a></td>
-          <td><a href="#desktop_10_mil">Desktop de R$ 10 mil</a></td>
-		  <td><a href="#desktop_15_mil">Desktop de R$ 15 mil</a></td>
-      </tr>
-    </table>
-    <table class="menu">
-      <tr><td><a href="#desktop_audiovisual_design">Desktop para audiovisual/design</a></td>
-		  <td><a href="#desktop_arquitetura_engenharia">Desktop para arquitetura/engenharia</a></td>
-          <td><a href="index.html">Voltar</a></td>
-      </tr>
-    </table>
-    <table>
-      <tr><td><h3 id="desktop_2_mil">Desktop de R$ 2 mil</h3></a>
-              <p><b>Placa-mãe:</b> A520</p>
-			  <p><b>Processador:</b> Ryzen 5 4600G</p>
-			  <p><b>Cooler:</b> Cooler Box</p>
-			  <p><b>Placa de vídeo:</b> integrado</p>
-			  <p><b>Memória RAM:</b> 1x 8GB DDR4-3200</p>
-			  <p><b>Armazenamento:</b> SSD NVMe 512 GB</p>
-			  <p><b>Fonte:</b> MSI MAG 650W BN</p>
-			  <hr>
-          </td>
-      </tr>
-      <tr><td><h3 id="desktop_4_mil">Desktop de R$ 4 mil</h3></a>
-              <p><b>Placa-mãe:</b> </p>
-			  <p><b>Processador:</b> </p>
-			  <p><b>Cooler:</b> </p>
-			  <p><b>Placa de vídeo:</b> RTX 4070 Super</p>
-			  <p><b>Memória RAM:</b> </p>
-			  <p><b>Armazenamento:</b> </p>
-			  <p><b>Fonte:</b> </p>
-			  <hr>
-          </td>
-      </tr>
-      <tr><td><h3 id="desktop_6_mil">Desktop de R$ 6 mil</h3></a>
-              <p><b>Placa-mãe:</b> </p>
-			  <p><b>Processador:</b> </p>
-			  <p><b>Cooler:</b> </p>
-              <p><b>Placa de vídeo:</b> </p>
-			  <p><b>Memória RAM:</b> </p>
-			  <p><b>Armazenamento:</b> </p>
-			  <p><b>Fonte:</b> </p>
-			  <hr>
-          </td>
-      </tr>
-      <tr><td><h3 id="desktop_10_mil">Desktop de R$ 10 mil</h3></a>
-              <p><b>Placa-mãe:</b> B650</p>
-			  <p><b>Processador:</b> Ryzen 5 7600</p>
-			  <p><b>Cooler:</b> DeepCool AG620/AK620</p>
-			  <p><b>Placa de vídeo:</b> RTX 4070 Super</p>
-			  <p><b>Memória RAM:</b> 2x 16GB DDR5-6000 EXPO</p>
-			  <p><b>Armazenamento:</b> SSD NVMe 2 TB</p>
-			  <p><b>Fonte:</b> XPG Core Reactor II 750W</p>
-			  <hr>
-          </td>
-      </tr>			  
-      <tr><td><h3 id="desktop_15_mil">Desktop de R$ 15 mil</h3></a>
-              <p><b>Placa-mãe:</b> X670</p>
-			  <p><b>Processador:</b> Ryzen 9 7950X</p>
-			  <p><b>Cooler:</b> Noctua NH-D15</p>
-              <p><b>Placa de vídeo:</b> RTX 4080 Super</p>
-			  <p><b>Memória RAM:</b> 2x 32GB DDR5-6000 EXPO</p>
-			  <p><b>Armazenamento:</b> SSD NVMe 2 TB</p>
-			  <p><b>Fonte:</b> XPG Core Reactor II 850W</p>
-			  <hr>
-          </td>
-      </tr>			  
-      <tr><td><h3 id="desktop_audiovisual_design">Desktop para audiovisual/design</h3></a>
-              <p><b>Placa-mãe:</b> </p>
-			  <p><b>Processador:</b> </p>
-			  <p><b>Cooler:</b> </p>
-              <p><b>Placa de vídeo:</b> </p>
-			  <p><b>Memória RAM:</b> </p>
-			  <p><b>Armazenamento:</b> </p>
-			  <p><b>Fonte:</b> </p>
-			  <hr>
-          </td>
-      </tr>			  
-      <tr><td><h3 id="desktop_arquitetura_engenharia">Desktop para arquitetura/engenharia</h3></a>
-              <p><b>Placa-mãe:</b> </p>
-			  <p><b>Processador:</b> </p>
-			  <p><b>Cooler:</b> </p>
-              <p><b>Placa de vídeo:</b> </p>
-			  <p><b>Memória RAM:</b> </p>
-			  <p><b>Armazenamento:</b> </p>
-			  <p><b>Fonte:</b> </p>
-			  <hr>
-          </td>
-      </tr>
-    </table>
-    <table class="menu">
-      <tr><td><a href="#topo">Topo</a></td>
-		  <td><a href="index.html">Voltar</a></td>
-      </tr>	  
-    </table>
+    <div id="topo" style="margin: 0px 15px">
+	  <img src="imagens/hardware_brasil_logo.png" width="492" height="112">
+      <hr>
+      <p><h3>Builds recomendadas [novembro/2024]</h3></p>
+	</div>
+	<div id="menu" style="padding: 5px">
+      <ul>
+        <li><a href="#desktop_2_mil">Desktop de R$ 2 mil</a></li>
+        <li><a href="#desktop_4_mil">Desktop de R$ 4 mil</a></li>
+        <li><a href="#desktop_6_mil">Desktop de R$ 6 mil</a></li>
+        <li><a href="#desktop_10_mil">Desktop de R$ 10 mil</a></li>
+	    <li><a href="#desktop_15_mil">Desktop de R$ 15 mil</a></li>
+      </ul>
+      <ul>
+        <li><a href="#desktop_audiovisual_design">Desktop para audiovisual/design</a></li>
+        <li><a href="#desktop_arquitetura_engenharia">Desktop para arquitetura/engenharia</a></li>
+        <li><a href="index.html">Voltar</a></li>
+      </ul>
+    </div>
+    <div id="desktop_2_mil" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop de R$ 2 mil</b></a>
+      <p><b>Placa-mãe:</b> A520</p>
+      <p><b>Processador:</b> Ryzen 5 4600G</p>
+      <p><b>Cooler:</b> stock</p>
+      <p><b>Placa de vídeo:</b> integrado</p>
+      <p><b>Memória RAM:</b> 1x 8GB DDR4-3200</p>
+      <p><b>Armazenamento:</b> SSD NVMe 512 GB</p>
+      <p><b>Fonte:</b> MSI MAG 650W BN</p>
+    </div>
+    <div id="desktop_4_mil" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop de R$ 4 mil</b></a>
+      <p><b>Placa-mãe:</b> </p>
+      <p><b>Processador:</b> </p>
+      <p><b>Cooler:</b> </p>
+      <p><b>Placa de vídeo:</b> RTX 4070 Super</p>
+      <p><b>Memória RAM:</b> </p>
+      <p><b>Armazenamento:</b> </p>
+      <p><b>Fonte:</b> </p>
+    </div>
+    <div id="desktop_6_mil" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop de R$ 6 mil</b></a>
+      <p><b>Placa-mãe:</b> </p>
+      <p><b>Processador:</b> </p>
+      <p><b>Cooler:</b> </p>
+      <p><b>Placa de vídeo:</b> </p>
+      <p><b>Memória RAM:</b> </p>
+      <p><b>Armazenamento:</b> </p>
+      <p><b>Fonte:</b> </p>
+    </div>
+    <div id="desktop_10_mil" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop de R$ 10 mil</b></a>
+      <p><b>Placa-mãe:</b> B650</p>
+      <p><b>Processador:</b> Ryzen 5 7600</p>
+      <p><b>Cooler:</b> DeepCool AG620/AK620</p>
+      <p><b>Placa de vídeo:</b> RTX 4070 Super</p>
+      <p><b>Memória RAM:</b> 2x 16GB DDR5-6000 EXPO</p>
+      <p><b>Armazenamento:</b> SSD NVMe 2 TB</p>
+      <p><b>Fonte:</b> XPG Core Reactor II 750W</p>
+    </div>
+    <div id="desktop_15_mil" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop de R$ 15 mil</b></a>
+      <p><b>Placa-mãe:</b> X670</p>
+      <p><b>Processador:</b> Ryzen 9 7950X</p>
+      <p><b>Cooler:</b> Noctua NH-D15</p>
+      <p><b>Placa de vídeo:</b> RTX 4080 Super</p>
+      <p><b>Memória RAM:</b> 2x 32GB DDR5-6000 EXPO</p>
+      <p><b>Armazenamento:</b> SSD NVMe 2 TB</p>
+      <p><b>Fonte:</b> XPG Core Reactor II 850W</p>
+    </div>
+    <div id="desktop_audiovisual_design" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop para audiovisual/design</b></a>
+      <p><b>Placa-mãe:</b> </p>
+      <p><b>Processador:</b> </p>
+      <p><b>Cooler:</b> </p>
+      <p><b>Placa de vídeo:</b> </p>
+      <p><b>Memória RAM:</b> </p>
+      <p><b>Armazenamento:</b> </p>
+      <p><b>Fonte:</b> </p>
+    </div>
+    <div id="desktop_arquitetura_engenharia" style="background-color: #333333; padding: 5px; margin: 15px"><b>Desktop para arquitetura/engenharia</b></a>
+      <p><b>Placa-mãe:</b> </p>
+      <p><b>Processador:</b> </p>
+      <p><b>Cooler:</b> </p>
+      <p><b>Placa de vídeo:</b> </p>
+      <p><b>Memória RAM:</b> </p>
+      <p><b>Armazenamento:</b> </p>
+      <p><b>Fonte:</b> </p>
+    </div>
+	<div style="padding: 5px">
+      <ul>
+        <li><a href="#topo">Topo</a></li>
+        <li><a href="index.html">Voltar</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 <div id="linhainferior">
