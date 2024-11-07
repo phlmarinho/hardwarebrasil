@@ -24,6 +24,14 @@ body {
   font-size: ;
 }
 a:link, a:visited {
+  color: #2eb455;
+  text-decoration: none;
+}  
+a:hover, a:active {
+  color: #2eb455;
+  text-decoration: underline;
+}
+a.botao:link, a.botao:visited {
   background-color: #2eb455;
   color: #ffffff;
   margin: 20px;
@@ -36,14 +44,22 @@ a:link, a:visited {
   border-color: #2eb455;
   box-shadow: 8px 8px 8px -4px #111111;
 }
-a:hover, a:active {
+a.botao:hover, a.botao:active {
   background-color: #41cd6b;
-  color: #ffffff;
   border-color: #ffffff;
 }
 a.reddit:link, a.reddit:visited {
   background-color: #ff4500;
+  color: #ffffff;
+  margin: 20px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  border-style: solid;
   border-color: #ff4500;
+  box-shadow: 8px 8px 8px -4px #111111;
 }
 a.reddit:hover, a.reddit:active {
   background-color: #ff6930;
@@ -51,7 +67,16 @@ a.reddit:hover, a.reddit:active {
 }
 a.discord:link, a.discord:visited {
   background-color: #5d6af2;
+  color: #ffffff;
+  margin: 20px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  border-style: solid;
   border-color: #5d6af2;
+  box-shadow: 8px 8px 8px -4px #111111;
 }
 a.discord:hover, a.discord:active {
   background-color: #7c86ef;
@@ -132,18 +157,16 @@ img {
         <li><a class="discord" href="#">Acesse nosso servidor no Discord [em breve]</a></li>
       </ul>
     </div>
-   <div style="padding: 0px 25px">
+    <div style="padding: 0px 25px">
 	  <p>Vai montar um desktop? Confira aqui as builds recomendadas pelo Hardware Brasil:</p>
-	</div>
+    </div>
     <div style="padding: 15px 25px">
       <ul>
-        <li><a href="#">Builds recomendadas de novembro/2024 [em breve]</a></li>
+        <li><a class="botao" href="#">Builds recomendadas de novembro/2024 [em breve]</a></li>
       </ul>
     </div>
   </div>
 </div>
-
-
 <div id="linhainferior">
 </div>
 <div id="faixainferior">
