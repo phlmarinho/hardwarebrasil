@@ -51,21 +51,27 @@ a.botao:hover, a.botao:active {
 div {
   margin: 0px;
   padding: 0px;
-  border-radius: 10px;
 }
 div.caixa {
   display: flex;
 }
+div.central {
+  flex: auto;
+  margin: 10px 25px 0px 25px;
+  padding: 15px 15px;
+  background-color: #333333;
+  text-align: center;
+}
 div.esquerda {
   flex: 40%;
-  margin: 5px 5px;
+  margin: 10px 5px 0px 25px;
   padding: 15px 15px;
   background-color: #555555;
   text-align: center;
 }
 div.direita {
   flex: 60%;
-  margin: 5px 5px;
+  margin: 10px 25px 0px 5px;
   padding: 0px 15px;
   background-color: #555555;
   text-align: left;
@@ -134,7 +140,7 @@ img {
       <hr>
       <p>Builds recomendadas de novembro/2024</p>
 	</div>
-	<div style="padding: 5px">
+	<div style="padding: 10px">
       <ul>
         <li><a class="botao" href="#desktop-basico">Desktop básico</a></li>
         <li><a class="botao" href="#desktop-intermediario">Desktop intermediário</a></li>
@@ -147,17 +153,19 @@ img {
         <li><a class="botao" href="index.html">Início</a></li>
       </ul>
     </div>
-
-    <div class="caixa" style="background-color: #333333; padding: 5px; margin: 15px">
-      <div id="notas" class="esquerda"><b>Notas</b>
-	  </div>
-	  <div class="direita"><p>O gabinete é uma escolha bastante pessoal do usuário, por isso não foi incluído nas builds.</p>
+    <div class="caixa">
+      <div id="notas" class="central" style="background-color: #333333">
+	  <b>Notas</b>
+	  <p>O gabinete é uma escolha pessoal do usuário, por isso não foi incluído nas builds. Opte por modelos com bom airflow.</p>
 	  <p>Devido aos <a class="externo" href="https://community.intel.com/t5/Processors/July-2024-Update-on-Instability-Reports-on-Intel-Core-13th-and/m-p/1617113" target="_blank">problemas relatados</a>, no momento não recomendamos processadores para desktop das 13ª e 14ª gerações da Intel.</p>
-	  <p>Ao escolher os módulos de memória RAM, confirme sua compatibilidade consultando a QVL (Qualified Vendor List) da placa-mãe.</p>
+	  <p>Ao escolher módulos de memória RAM, confirme sua compatibilidade consultando a QVL (Qualified Vendor List) da placa-mãe.</p>
 	  <p>Para evitar contratempos, prefira adquirir os componentes da sua build em lojas confiáveis, com nota fiscal e garantia.</p>
 	  </div>
 	</div>
-    <div id="desktop-basico" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop básico ::</b></a>
+    <div class="caixa">
+      <div id="desktop-basico" class="esquerda"><b>Desktop básico</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> Ryzen 5 5600G</p>
       <p><b>Cooler:</b> stock</p>	  
       <p><b>Placa-mãe:</b> B450</p>
@@ -165,53 +173,74 @@ img {
       <p><b>Placa de vídeo:</b> integrado</p>
       <p><b>Armazenamento:</b> SSD NVMe 512 GB</p>
       <p><b>Fonte:</b> MSI MAG 650W BN</p>
-    </div>
-    <div id="desktop-intermediario" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop intermediário ::</b></a>
+	  </div>
+	</div>
+    <div class="caixa">
+      <div id="desktop-intermediario" class="esquerda"><b>Desktop intermediário</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> </p>
-      <p><b>Cooler:</b> </p>
+      <p><b>Cooler:</b> </p>	  
       <p><b>Placa-mãe:</b> </p>
       <p><b>Memória RAM:</b> </p>
       <p><b>Placa de vídeo:</b> </p>
       <p><b>Armazenamento:</b> </p>
       <p><b>Fonte:</b> </p>
-    </div>
-    <div id="desktop-avancado" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop avançado ::</b></a>
+	  </div>
+	</div>
+    <div class="caixa">
+      <div id="desktop-avancado" class="esquerda"><b>Desktop avançado</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> </p>
-	  <p><b>Cooler:</b> </p>
+      <p><b>Cooler:</b> </p>	  
       <p><b>Placa-mãe:</b> </p>
       <p><b>Memória RAM:</b> </p>
       <p><b>Placa de vídeo:</b> </p>
       <p><b>Armazenamento:</b> </p>
       <p><b>Fonte:</b> </p>
-    </div>
-    <div id="desktop-extremo" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop extremo ::</b></a>
+	  </div>
+	</div>
+    <div class="caixa">
+      <div id="desktop-extremo" class="esquerda"><b>Desktop extremo</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> </p>
-	  <p><b>Cooler:</b> </p>
+      <p><b>Cooler:</b> </p>	  
       <p><b>Placa-mãe:</b> </p>
       <p><b>Memória RAM:</b> </p>
       <p><b>Placa de vídeo:</b> </p>
       <p><b>Armazenamento:</b> </p>
       <p><b>Fonte:</b> </p>
-    </div>
-    <div id="desktop-arquitetura_design" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop para arquitetura/design ::</b></a>
+	  </div>
+	</div>
+    <div class="caixa">
+      <div id="desktop-arquitetura-design" class="esquerda"><b>Desktop para arquitetura/design</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> </p>
-      <p><b>Cooler:</b> </p>
+      <p><b>Cooler:</b> </p>	  
       <p><b>Placa-mãe:</b> </p>
       <p><b>Memória RAM:</b> </p>
       <p><b>Placa de vídeo:</b> </p>
       <p><b>Armazenamento:</b> </p>
       <p><b>Fonte:</b> </p>
-    </div>
-    <div id="desktop-edicao-de-video" style="background-color: #333333; padding: 5px; margin: 15px"><b>:: Desktop para edição de vídeo ::</b></a>
+	  </div>
+	</div>
+    <div class="caixa">
+      <div id="desktop-edicao-de-video" class="esquerda"><b>Desktop para edição de vídeo</b>
+	  </div>
+	  <div class="direita">
       <p><b>Processador:</b> </p>
-      <p><b>Cooler:</b> </p>
+      <p><b>Cooler:</b> </p>	  
       <p><b>Placa-mãe:</b> </p>
       <p><b>Memória RAM:</b> </p>
       <p><b>Placa de vídeo:</b> </p>
       <p><b>Armazenamento:</b> </p>
       <p><b>Fonte:</b> </p>
-    </div>
-	<div style="padding: 5px">
+	  </div>
+	</div>
+	<div style="padding: 10px">
       <ul>
         <li><a class="botao" href="#topo">Topo</a></li>
         <li><a class="botao" href="index.html">Início</a></li>
